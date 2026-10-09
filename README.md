@@ -5,10 +5,11 @@
 have a working published script.
 
 Current Supported CIS benchmark versions:
-- **Foundations 6.0 Level 1**
+- **Foundations 6.0 (L1)**
 
 
 ### Required Testing Tools
+```
 CLI Programs:
 - Windows Terminal
 - Microsoft.AzureCLI
@@ -27,8 +28,9 @@ CLI Programs:
     - Microsoft.Graph.Identity.Signins                                      2.36.1
     - Microsoft.Graph.Reports                                               2.36.1
     - Microsoft.Graph.Users                                                 2.36.1
+```
 
-**NOTE** Be sure to remove all Az powershell modules. they conflict with the AzureCLI Tools
+**NOTE :** Be sure to remove all Az powershell modules. they conflict with the AzureCLI Tools
 and can cause these scripts to not run correctly! Remove with this command:
 
 ```powershell
@@ -38,22 +40,5 @@ and can cause these scripts to not run correctly! Remove with this command:
 
 
 ### Required Test User Permissions
-
-Required Roles:
-- Global Reader
-- Security Reader
-- Subscription Contributor
-- Graph Data Connect Administrator
-- Privileged Role Administrator \[1\]
-- Key Vault Crypto User
-- Key Vault Secrets User
-
-MGGraph Permissions:
-- User.Read.All
-- Group.Read.All
-- GroupMember.Read.All
-- Policy.Read.All
-- Organization.Read.All
-- Application.Read.All
-- RoleManagement.Read.Directory
-- AuditLog.Read.All
+For information on Setup & Configuration of a CIS testing account, please read
+[Docs/test-account-config.md](Docs/test-account-config.md)
